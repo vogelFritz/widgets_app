@@ -7,7 +7,7 @@ class SnackbarScreen extends StatelessWidget {
 
   void showCustomSnackbar(BuildContext context) {
     final snackBar = SnackBar(
-        content: Text('Hola Mundo'),
+        content: const Text('Hola Mundo'),
         action: SnackBarAction(
           label: 'Ok!',
           onPressed: () {},
@@ -48,7 +48,7 @@ class SnackbarScreen extends StatelessWidget {
                     context: context, children: [const Text('Hallo Welt!')]);
               },
               child: const Text('Licencias usadas')),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           FilledButton.tonal(
@@ -59,7 +59,7 @@ class SnackbarScreen extends StatelessWidget {
         ],
       )),
       floatingActionButton: FloatingActionButton.extended(
-          icon: Icon(Icons.remove_red_eye_outlined),
+          icon: const Icon(Icons.remove_red_eye_outlined),
           onPressed: () {
             showCustomSnackbar(context);
           },
