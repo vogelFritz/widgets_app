@@ -54,5 +54,10 @@ const appMenuItems = <MenuItems>[
       title: 'Infinite Scroll y Pull',
       subTitle: 'Listas infinitas y pull to refresh',
       link: '/infinite',
+      icon: Icons.list_alt_rounded),
+  MenuItems(
+      title: 'Riverpod Counter',
+      subTitle: 'Introducción a Riverpod',
+      link: '/counter',
       icon: Icons.list_alt_rounded)
 ];
